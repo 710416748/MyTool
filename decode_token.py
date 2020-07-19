@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import base64
 import sys
-import token
+import mi_token
 token_base64 = bytes(0)
 token_decode = bytes(0)
 head = b''
@@ -23,7 +23,7 @@ def decode_token():
 #        for i in token_decode:
 #            print(hex(int(i)), end=' ')
         print()
-        token.Token(token_decode)
+        mi_token.Token(token_decode)
 
 
 if __name__ == '__main__':
